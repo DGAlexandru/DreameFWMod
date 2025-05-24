@@ -1,0 +1,50 @@
+# NAME		Relative path
+#
+#HWDEF		HWDEF
+version		version.json
+package-file	package-file
+parameter	parameter.txt			
+boot1		boot.img
+rootfs1		rootfs.img
+mcu			mcu.bin
+toc0        toc0.fex
+toc1        toc1.fex
+boot_md5sum	boot_md5sum
+rootfs_md5sum	rootfs_md5sum
+mcu_md5sum	mcu_md5sum
+boot_sha256sum	boot_sha256sum
+rootfs_sha256sum	rootfs_sha256sum
+mcu_R2424_md5sum        mcu_R2424_md5sum
+mcu_R2424_sha256sum     mcu_R2424_sha256sum
+mcu_R2424.bin           mcu_R2424.bin
+mcu_R2310D_md5sum        mcu_R2310D_md5sum
+mcu_R2310D_sha256sum     mcu_R2310D_sha256sum
+mcu_R2310D.bin           mcu_R2310D.bin
+mcu_R2310E_md5sum        mcu_R2310E_md5sum
+mcu_R2310E_sha256sum     mcu_R2310E_sha256sum
+mcu_R2310E.bin           mcu_R2310E.bin
+mcu_R2465_md5sum        mcu_R2465_md5sum
+mcu_R2465_sha256sum     mcu_R2465_sha256sum
+mcu_R2465.bin           mcu_R2465.bin
+mcu_R2492A_md5sum        mcu_R2492A_md5sum
+mcu_R2492A_sha256sum     mcu_R2492A_sha256sum
+mcu_R2492A.bin           mcu_R2492A.bin
+mcu_R2492X_md5sum        mcu_R2492X_md5sum
+mcu_R2492X_sha256sum     mcu_R2492X_sha256sum
+mcu_R2492X.bin           mcu_R2492X.bin
+mcu_R2488_md5sum        mcu_R2488_md5sum
+mcu_R2488_sha256sum     mcu_R2488_sha256sum
+mcu_R2488.bin           mcu_R2488.bin
+mcu_R9428_md5sum        mcu_R9428_md5sum
+mcu_R9428_sha256sum     mcu_R9428_sha256sum
+mcu_R9428.bin           mcu_R9428.bin
+mcu_R2491A_md5sum        mcu_R2491A_md5sum
+mcu_R2491A_sha256sum     mcu_R2491A_sha256sum
+mcu_R2491A.bin           mcu_R2491A.bin
+mcu_sha256sum	mcu_sha256sum
+before_upgrade.sh before_upgrade.sh
+after_upgrade.sh after_upgrade.sh
+ota.json    ota.json
+
+
+#BOARD:r2416

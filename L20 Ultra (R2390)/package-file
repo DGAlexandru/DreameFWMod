@@ -1,0 +1,29 @@
+# NAME		Relative path
+#
+#HWDEF		HWDEF
+version		version.json
+package-file	package-file
+parameter	parameter.txt			
+boot1		boot.img
+rootfs1		rootfs.img
+mcu			mcu.bin
+toc0        toc0.fex
+toc1        toc1.fex
+boot_md5sum	boot_md5sum
+rootfs_md5sum	rootfs_md5sum
+mcu_md5sum	mcu_md5sum
+boot_sha256sum	boot_sha256sum
+rootfs_sha256sum	rootfs_sha256sum
+mcu_R2390_md5sum        mcu_R2390_md5sum
+mcu_R2390_sha256sum     mcu_R2390_sha256sum
+mcu_R2390.bin           mcu_R2390.bin
+mcu_R2394_md5sum        mcu_R2394_md5sum
+mcu_R2394_sha256sum     mcu_R2394_sha256sum
+mcu_R2394.bin           mcu_R2394.bin
+mcu_sha256sum	mcu_sha256sum
+before_upgrade.sh before_upgrade.sh
+after_upgrade.sh after_upgrade.sh
+
+
+
+#BOARD:r2390
