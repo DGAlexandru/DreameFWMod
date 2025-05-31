@@ -49,7 +49,7 @@ else
     fi
 fi
 
-#Make sure ava is allive
+#Make sure ava is alive
 if [[ ! $(pidof ava) ]]; then
     DEVICE_NAME=`jsonpath -i /etc/os-release -e "@.product"`
     ava -f /ava/conf/${DEVICE_NAME}.conf force &
