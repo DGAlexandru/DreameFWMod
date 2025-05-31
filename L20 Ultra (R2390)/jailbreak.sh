@@ -7,6 +7,7 @@ DESTdir=temp-rootfs
 ROOTtmp=root_tmp.img
 ROOT=rootfsL20.img
 RELEASE=1639
+AUTH=j6793976ea9916.public
 
 #Cleanup of old data
 rm -rf $DESTdir
@@ -17,13 +18,13 @@ unsquashfs -d $DESTdir $ROOTin
 
 #Customizations
 cp $SOURCEdir/mcu.bin $DESTdir/misc/
-cp $SOURCEdir/authorized_keys $DESTdir/misc/
+cp $SOURCEdir/$AUTH $DESTdir/misc/authorized_keys
 
 echo -e '#!/bin/sh\n/bin/login -f root\n' > $DESTdir/bin/dustshell
 chmod +xr $DESTdir/bin/dustshell
 
 cp $SOURCEdir/banner $DESTdir/etc/
-sed -i -e 's|release|$RELEASE|g' $DESTdir/etc/hostname
+sed -i -e "s|release|$RELEASE|g" $DESTdir/etc/hostname
 cp $SOURCEdir/hosts $DESTdir/misc/
 
 sed -i -e 's|# Put a getty on the serial port|&\n::respawn:/sbin/getty -n -l /bin/dustshell 115200 -L ttyS0|g' $DESTdir/etc/inittab
